@@ -14,5 +14,5 @@ class stock:
     def retorno(self,log=False):
         precios=self.hist_data["PX_LAST"]
         return (precios[-1]-precios[0])/precios[0]
-    
+
 
