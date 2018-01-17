@@ -1,5 +1,10 @@
-class simple_interet:
-    def __init__(self,rate, periodicity,currency="COP"):
+class simple_interest:
+    """
+    a) EL capital sobre el cual se calcula el interes no se aumenta con los intereses causados
+    b) No hay reinversion de los intereses, y por ende no hay intereses sobre los intereses
+    c) El valor de una inversion aumenta linealmete en el tiempo
+    """
+    def __init__(self,rate=0.0, periodicity="",currency="COP"):
         self.rate=rate
         self.period=periodicity
         self.currenc=currency
@@ -11,7 +16,7 @@ class simple_interet:
         return display
 
 class time_of_investment:
-    def __init__(self,number_of_periods,periodicity):
+    def __init__(self,number_of_periods=0,periodicity=""):
         self.number_of_periods=number_of_periods
         self.period=periodicity
 
